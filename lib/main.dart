@@ -38,7 +38,7 @@ class AnimalQuizState extends State<AnimalQuiz>{
              height: 50.0,
                color: Colors.green,
                onPressed: startQuiz,
-               child: new Text("Quiz 1",
+               child: new Text("Animal quiz",
                  style: new TextStyle(
                      fontSize: 18.0,
                      color: Colors.white

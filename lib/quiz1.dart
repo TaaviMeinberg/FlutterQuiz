@@ -250,25 +250,27 @@ class Summary extends StatelessWidget{
       child: Scaffold(
 
         body: new Container(
+          alignment: Alignment.center,
           child: new Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-
               new Text("Final Score: $score",
                 style: new TextStyle(
-                    fontSize: 35.0
+                    fontSize: 35.0,
                 ),),
 
               new Padding(padding: EdgeInsets.all(30.0)),
 
               new MaterialButton(
                 color: Colors.red,
+
                 onPressed: (){
                   questionNumber = 0;
                   finalScore = 0;
                   Navigator.pop(context);
                 },
                 child: new Text("Reset Quiz",
+
                   style: new TextStyle(
                       fontSize: 20.0,
                       color: Colors.white
